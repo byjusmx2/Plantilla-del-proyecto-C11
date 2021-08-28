@@ -11,13 +11,13 @@ function setup(){
   
   createCanvas(400,400);
   
-// Moving background
+// Mover el fondo
 path=createSprite(200,200);
 path.addImage(pathImg);
 path.velocityY = 4;
 path.scale=1.2;
 
-//creating boy running
+//crear sprite de niño corriendo
 boy = createSprite(180,340,30,30);
 boy.scale=0.08;
 boy.addAnimation("JakeRunning",boyImg);
@@ -46,7 +46,7 @@ function draw() {
   boy.collide(leftBoundary);
   boy.collide(rightBoundary);
   
-  //code to reset the background
+  //código para reiniciar el fondo
 
   /*if(path.y > 400 ){
     path.y = height/2;
